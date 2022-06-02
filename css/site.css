@@ -1,98 +1,111 @@
-*{
-    margin:0;
-    padding: 0;
+* {	
     box-sizing: border-box;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+    text-decoration: none;
+    color: black;
 }
-body {
-    font-family: 'Quicksand', sans-serif;
-    color: #324e63;
-  }
-.wrapper{
-    width: 100%;
-    min-height: 100vh;
-    display: flex;
-    background: linear-gradient(28deg, rgba(2,0,36,1) 0%, rgba(51,114,190,1) 0%, rgba(94,8,112,1) 0%, rgba(90,7,101,1) 12%, rgba(105,9,121,1) 38%, rgba(90,38,140,1) 47%, rgba(75,68,160,1) 56%, rgba(65,88,173,1) 62%, rgba(0,212,255,1) 100%);
+body { 
+    color: black;
+    line-height:21px;
+    font-size:14px;
+    overflow-x:hidden;
+    background:#fff;
+    position:initial;
 }
-.profile-card{
-    width: 100%;
-    min-height: 400px;
-    max-width: 500px;
-    background: #ffff;
-    margin: auto;
-    box-shadow: 0px 8px 60px -10px rgba(13,28,39,0.6);
-    border-radius: 12px;
+.header-logo {
+    width: 100px;
+    height: 60px;
+    margin-left: 67px;
+    position: absolute;
 }
-.profile-card-img{
-    width: 150px;
-    height: 150px;
-    margin:auto;
-    transform: translateY(-50%);
-    border-radius: 50%;
-    overflow: hidden;
+a:hover {
+    color: orangered;
+}
+.header-navbar {
+    top: -10px;
+    margin-right: 13px;
     position: relative;
-    z-index: 4;
-    box-shadow: 0px 5px 50px 0px rgb(108, 68, 252), 0px 0px 0px 7px rgba(107, 74, 255, 0.5);
 }
-.profile-card-img img{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    border-radius: 50%;
+#header-navbar-top > ul > li {
+    float: left;
+    
+} 
+#header-navbar-top > ul {
+    margin-right: 45px;
 }
-.profile-card-info{
-    text-align: center;
+.dau {
+    margin-right: 15px;
+    margin-left: 15px; 
 }
-.profile-card-info>*{
-    margin-bottom: 15px;
-    font-weight: 700;
+.ba-cham {
+    margin-left: 40px;
+    color: rgb(182, 173, 173);
 }
-.profile-card-info .name{
-    color:rgb(108, 68, 252);
-    font-size: 20px;
-}
-.profile-card-social{
-    margin-top: 25px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-}
-.profile-card-social .item{
-    display: inline-flex;
-    width: 55px;
-    height: 55px;
-    margin: 15px;
-    border-radius: 50%;
-    align-items: center;
-    justify-content: center;
-    color: #fff;
+.header-navbar-bottom {
+    top: -13px;
+    margin-left: 40px;
     position: relative;
-    font-size: 21px;
-    flex-shrink: 0;
-    transition: all 0.3s;
 }
-.profile-card-social .item:hover{
-    transform: scale(1.2);
-}
-.facebook{
-    background: linear-gradient(45deg, #3b5998, #0078d7);
-    box-shadow: 0px 4px 30px rgb(43 98 169 / 50%);
-}
-.tiktok{
-    background: linear-gradient(45deg, #0e0e0e, #0a0a0a);
-    box-shadow: 0px 4px 30px rgba(16, 16, 16, 0.7);
-}
-.instagram{
-    background: linear-gradient(45deg, #405de6, #5851db, #833ab4, #c13584, #e1306c, #fd1d1d);
-    box-shadow: 0px 4px 30px rgb(120 64 190 / 60%);
-}
-.github{
-    background: linear-gradient(45deg, #333333, #626b73);
-    box-shadow: 0px 4px 30px rgb(63 65 67 / 60%);
-}
-.website{
-    background: linear-gradient(45deg, #d5135a, #f05924);
-    box-shadow: 0px 4px 30px rgb(223 45 70 / 60%);
+#menu-bar {
+    position: relative;
+    top: 105px;
+    left: 10px;
+} 
+ul {
+    list-style: none;
 }
 
+#menu-bar > ul > li {
+    background-color: #fff;
+    display: inline-block;
+    text-align: start; 
+    padding: 0px 16px;
+}
+#menu-bar > ul > li {
+    height: 30px;   
+}
+.Sản-phẩm > ul {
+    display: none;
+    position: absolute;
+    width: 210px;
+    left: 160px;
+    top: 30px;
+    background-color: #fff;
+    color: orangered;
+    border-top: solid orangered
+}
+.Sản-phẩm:hover > ul {
+    display: block;
+    z-index: 1; 
+}
+.Sản-phẩm > ul > li {
+    padding: 13px 0px;
+    left: -22px;
+    position: relative;
+}
+.Sản-phẩm > ul > li:hover {
+    color: orangered;
+}
+.header-navbar{
+    float: right;
+    display: inline-table;
 
+}
+input {
+    float: right;
+    position: relative;
+    border: none;
+    width: 305px;
+    height: 38px;
+    left: 325px;
+    top: 48px;
+    background-color: rgb(235, 235, 235);
+
+}
+.slider > img {
+    top: 30px;
+    position: relative;
+    height: 450px;
+    width: 1350px;
+
+}
