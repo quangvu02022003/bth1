@@ -1,48 +1,98 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lập trình cùng tớ - Tạo profile card đơn giản</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="css/site.css">
-</head>
-<body>
-    <div class="wrapper">
-        <div class="profile-card">
-            <div class="profile-card-img">
-                <img src="khoangu.jpg" alt="">
+<html>
+    <head>
+        <title></title>
+        <link rel="stylesheet" href="css/site.css">
+    </head>
+    <body>
+        <!-- Header of page -->
+        <div class="container-header">
+            <div class="header-logo">
+                <img src="images/logo.png" />
             </div>
-            <div class="profile-card-info">
-                <div class="name">Lê Hữu Khoa</div>
-                <div class="position">20/10/2003</div>
-                <div class="location">
-                    <i class="fa-solid fa-map-location"></i>  Cam Lộ, Quảng Trị
+            <div class="header-navbar">
+                <div id="header-navbar-top">
+                    <ul>
+                        <li><a href="#">1900.175571</a></li>
+                        <li class="dau">|</li>
+                        <li><a href="#" title="Đăng ký">ĐĂNG KÝ</a></li>
+                        <li class="dau">|</li>
+                        <li><a href="#" title="Đăng nhập">ĐĂNG NHẬP</a></li>
+                    </ul>
+                </div>
+                <div class="ba-cham">............................................................................................</div>
+                <div class="header-navbar-bottom">
+                    <p>Miễn phí vận chuyển <span style="color: red;">ĐƠN HÀNG TRÊN 500K</span></p>
                 </div>
             </div>
-            <div class="profile-card-social">
-                <a href="https://www.facebook.com/khoahocngu" class="item facebook" target="_blank">
-                    <i class="fa-brands fa-facebook-f"></i>
-                  </a>
-                  <a href="https://www.tiktok.com/@iron01o" class="item tiktok" target="_blank">
-                    <i class="fa-brands fa-tiktok"></i>
-                  </a>
-                  <a href="https://www.instagram.com/hi_lehuukhoa/" class="item instagram" target="_blank">
-                    <i class="fa-brands fa-instagram"></i>
-                  </a>
-                  <a href="https://github.com/quangvu02022003" class="item github" target="_blank">
-                    <i class="fa-brands fa-github"></i>
-                  </a>
-                  <a href="#" class="item website" target="_blank">
-                    <i class="fa-solid fa-link"></i>
-                  </a>
+        </div>
+        <!--/ End of Header-->
+
+        <!-- NavBar: menu, search form -->
+        <div class="navbar">
+            <div class="container">
+                <!-- Menu Bar -->
+                <div id="menu-bar">
+                    <ul class="menu">
+						<li>
+							<a href="#" class="Trang-chủ" title="Trang chủ"><span style="color: orangered;">TRANG CHỦ</span></a>
+						</li>
+						<li class="Sản-phẩm">
+							<a href="#"  title="Sản phẩm"><span>SẢN PHẨM</span></a>
+							<ul>
+								<li>
+									<a href="#" title="Điện thoại">Điện thoại </a>
+                                </li>
+
+								<li>
+                                    <a href="#" title="Tablet">Máy tính bảng </a>
+								</li>
+
+								<li>
+									<a href="#" title="Laptop">Máy tính xách tay </a>
+								</li>
+                                
+								<li>
+									<a href="#" title="Phụ kiện">Phụ kiện </a>
+								</li>
+							</ul>
+						</li>
+						<li>
+							<a href="#" class="" title="Bài viết">
+                                <span>BÀI VIẾT</span>
+							</a>
+						</li>
+						<li>
+							<a href="#" title="Giới thiệu">
+                                <span>GIỚI THIỆU</span>
+                            </a>
+						</li>
+						<li>
+							<a href="#" title="Liên hệ">
+								<span>LIÊN HỆ</span>
+							</a>
+						</li>
+					</ul>
+                </div>
+                <!--/ Menu Bar -->
+
+                <!-- Search Bar -->
+                <div id="search-bar">
+                    <form action="/search">                        
+                        <input type="text" name="search" placeholder="Tìm kiếm..." autocomplete="off">
+                    </form>
+                </div>
+                <!--/ Search Bar -->
+
             </div>
         </div>
-    </div>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/js/all.min.js" integrity="sha512-6PM0qYu5KExuNcKt5bURAoT6KCThUmHRewN3zUFNaoI6Di7XJPTMoT6K0nsagZKk2OB4L7E3q1uQKHNHd4stIQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-</body>
+        <!--/ NavBar: menu, search form -->
+
+        <!-- Slider -->
+        <div class="slider">
+            <img src="images/slideshow_1.webp" alt="" class="slider-image" />
+        </div>
+        <!--/ Slider -->
+
+    </body>
 </html>
